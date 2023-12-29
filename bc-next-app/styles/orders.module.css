@@ -1,0 +1,17 @@
+/* Orders.module.css */
+.ordersContainer {
+    @apply p-4 bg-white shadow-lg rounded-lg;
+  }
+  
+  .orderItem {
+    @apply p-3 bg-gray-100 m-2 rounded-lg text-gray-800;
+  }
+  
+  .loading {
+    @apply text-lg font-semibold text-blue-500;
+  }
+  
+  .errorMessage {
+    @apply text-lg font-semibold text-red-500;
+  }
+  
