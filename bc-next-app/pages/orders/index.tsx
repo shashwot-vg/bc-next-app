@@ -10,6 +10,7 @@ const Orders = () => {
 	const [err, setError] = useState(null);
 
 	const { data, error, isLoading } = useGetAllOrders();
+	console.log(data);
 	useEffect(() => {
 		if (data) {
 			setOrders(data);
@@ -31,7 +32,7 @@ const Orders = () => {
 		<div className={styles.ordersContainer}>
 			{orders?.map((order) => (
 				<div key={order.id} className={styles.orderItem}>
-					{order.id}
+					Order id: {order.id}
 				</div>
 			))}
 		</div>
